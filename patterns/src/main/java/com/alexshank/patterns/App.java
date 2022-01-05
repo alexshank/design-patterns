@@ -12,6 +12,8 @@ public class App
         List<DesignPattern> designPatterns = new ArrayList<>();
         designPatterns.add(new DesignPattern("Abstract Factory", DesignPatternType.CREATIONAL));
 
+        designPatterns.add(new DesignPattern("Factory", DesignPatternType.CREATIONAL));
+
         System.out.println();
         designPatterns.stream()
                 .map(DesignPattern::toString)
