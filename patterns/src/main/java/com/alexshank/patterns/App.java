@@ -1,13 +1,21 @@
 package com.alexshank.patterns;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import java.util.ArrayList;
+import java.util.List;
+
+public class App
 {
+
+
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        List<DesignPattern> designPatterns = new ArrayList<>();
+        designPatterns.add(new DesignPattern("Abstract Factory", DesignPatternType.CREATIONAL));
+
+        System.out.println();
+        designPatterns.stream()
+                .map(DesignPattern::toString)
+                .forEach(System.out::println);
+
     }
 }
