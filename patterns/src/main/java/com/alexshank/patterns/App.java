@@ -1,4 +1,4 @@
-package com.alexshank.design-patterns;
+package com.alexshank.patterns;
 
 /**
  * Hello world!
