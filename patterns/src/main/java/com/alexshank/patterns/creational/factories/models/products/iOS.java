@@ -1,8 +1,8 @@
 package com.alexshank.patterns.creational.factories.models.products;
 
-public class iOS implements PhoneOS {
+public class iOS extends PhoneOS {
     @Override
-    public String downloadUpdates() {
-        return "Downloading Apple updates...";
+    public String createVersion() {
+        return "apple-version-1.0";
     }
 }

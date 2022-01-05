@@ -1,5 +1,6 @@
 package com.alexshank.patterns.creational.factories;
 
+import com.alexshank.patterns.creational.factories.models.factories.AppleFactory;
 import com.alexshank.patterns.creational.factories.models.factories.PhoneAbstractFactory;
 import com.alexshank.patterns.creational.factories.models.Phones.MobilePhone;
 import com.alexshank.patterns.creational.factories.models.factories.AndroidFactory;
@@ -15,8 +16,8 @@ public class AbstractFactoryApp {
     public static void main(String[] args) {
 
         // We can decide what family of products we want to create at runtime or with a config value
-        PhoneAbstractFactory phoneAbstractFactory = new AndroidFactory();
-//        AbstractFactory<PhoneOS, PhoneDisplay> phoneAbstractFactory = new AppleFactory();
+//        PhoneAbstractFactory phoneAbstractFactory = new AndroidFactory();
+        PhoneAbstractFactory phoneAbstractFactory = new AppleFactory();
 
         // We can then use the family of products together to do things (like create a more complex object)
         MobilePhone mobilePhone = new MobilePhone(

@@ -1,8 +1,8 @@
 package com.alexshank.patterns.creational.factories.models.products;
 
-public class AndroidNuget implements PhoneOS {
+public class AndroidNuget extends PhoneOS {
     @Override
-    public String downloadUpdates() {
-        return "Downloading Android updates...";
+    public String createVersion() {
+        return "ANDROID::1::0::0";
     }
 }

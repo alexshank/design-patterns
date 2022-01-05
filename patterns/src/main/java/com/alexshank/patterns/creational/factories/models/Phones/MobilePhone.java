@@ -21,7 +21,7 @@ public class MobilePhone {
         System.out.println();
         System.out.println("Starting update...");
         System.out.println(display.turnOffDisplay());
-        System.out.println(os.downloadUpdates());
+        System.out.println(os.upgradeVersion());
         System.out.println("Update finished!");
     }
 }
