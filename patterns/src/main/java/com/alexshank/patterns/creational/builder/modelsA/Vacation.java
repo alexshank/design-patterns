@@ -1,4 +1,4 @@
-package com.alexshank.patterns.creational.builder.models;
+package com.alexshank.patterns.creational.builder.modelsA;
 
 public class Vacation {
     private String destination;
