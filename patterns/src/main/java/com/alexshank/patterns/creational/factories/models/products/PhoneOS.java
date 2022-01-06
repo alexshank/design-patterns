@@ -12,7 +12,7 @@ public abstract class PhoneOS {
      *
      * In this example, we vary the String representation of a particular OS version.
      */
-    public abstract String createVersion();
+    protected abstract String createVersion();
 
     public String upgradeVersion(){
         return "Upgrading from version " + createVersion();
